@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我们 - 心理学咨询预约</title>
+   <link rel="stylesheet" href="联系我们.css">
+</head>
+<body>
+    <div class="container">
+        <section id="contact">
+            <div class="section-title">
+                <h2>联系我们</h2>
+                <p>如需心理咨询服务或有任何疑问，请填写以下表单</p>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>联系方式</h3>
+                    <hr>
+                    <div class="contact-detail">
+                        <h4>地址</h4>
+                        <p>心理学路123号<br>心灵探索咨询中心<br>邮编：10086</p>
+                    </div>
+                     <hr>
+                    <div class="contact-detail">
+                        <h4>电话</h4>
+                        <p>400-123-4567<br>周一至周五: 9:00 - 18:00</p>
+                    </div>
+                     <hr>
+                    <div class="contact-detail">
+                        <h4>电子邮件</h4>
+                        <p> 3012469860@qq.com<br>咨询预约: 3012469860@qq.com</p>
+                    </div>
+                     <hr>
+                    <div class="contact-detail">
+                        <h4>营业时间</h4>
+                        <p>周一至周五: 9:00 - 18:00<br>周六: 10:00 - 16:00<br>周日休息</p>
+                    </div>
+
+                </div>
+                
+                <div class="contact-form">
+                    <form id="appointmentForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">姓名 *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">电话 *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">电子邮件 *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="age">年龄</label>
+                                <input type="number" id="age" name="age" min="12" max="99">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>咨询类型 *</label>
+                            <div class="radio-group">
+                                <div class="radio-option">
+                                    <input type="radio" id="individual" name="consultType" value="individual" checked>
+                                    <label for="individual">个人咨询</label>
+                                </div>
+                                <div class="radio-option">
+                                    <input type="radio" id="couple" name="consultType" value="couple">
+                                    <label for="couple">伴侣咨询</label>
+                                </div>
+                                <div class="radio-option">
+                                    <input type="radio" id="family" name="consultType" value="family">
+                                    <label for="family">家庭咨询</label>
+                                </div>
+                                <div class="radio-option">
+                                    <input type="radio" id="other" name="consultType" value="other">
+                                    <label for="other">其他</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="preferredDate">首选日期 *</label>
+                                <input type="date" id="preferredDate" name="preferredDate" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="preferredTime">首选时间 *</label>
+                                <select id="preferredTime" name="preferredTime" required>
+                                    <option value="">请选择时间段</option>
+                                    <option value="morning">上午 (9:00-12:00)</option>
+                                    <option value="afternoon">下午 (13:00-17:00)</option>
+                                    <option value="evening">晚上 (18:00-21:00)</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="concern">主要困扰/问题 *</label>
+                            <select id="concern" name="concern" required>
+                                <option value="">请选择最符合的选项</option>
+                                <option value="anxiety">焦虑/压力</option>
+                                <option value="depression">抑郁/情绪低落</option>
+                                <option value="relationship">人际关系</option>
+                                <option value="family">家庭问题</option>
+                                <option value="career">职业发展</option>
+                                <option value="trauma">创伤经历</option>
+                                <option value="self-growth">个人成长</option>
+                                <option value="other">其他问题</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="duration">问题持续时间 *</label>
+                            <select id="duration" name="duration" required>
+                                <option value="">请选择持续时间</option>
+                                <option value="less1">少于1个月</option>
+                                <option value="1-3">1-3个月</option>
+                                <option value="3-6">3-6个月</option>
+                                <option value="6-12">6-12个月</option>
+                                <option value="over1">1年以上</option>
+                                <option value="over3">3年以上</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="description">请描述您的情况 *</label>
+                            <textarea id="description" name="description" placeholder="请简要描述您的情况、困扰或咨询目标..." required></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>是否曾接受过心理咨询？ *</label>
+                            <div class="radio-group">
+                                <div class="radio-option">
+                                    <input type="radio" id="therapyYes" name="previousTherapy" value="yes" required>
+                                    <label for="therapyYes">是</label>
+                                </div>
+                                <div class="radio-option">
+                                    <input type="radio" id="therapyNo" name="previousTherapy" value="no">
+                                    <label for="therapyNo">否</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>您更倾向于哪种咨询方式？</label>
+                            <div class="checkbox-group">
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="methodOnline" name="consultMethod" value="online">
+                                    <label for="methodOnline">线上视频咨询</label>
+                                </div>
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="methodOffline" name="consultMethod" value="offline">
+                                    <label for="methodOffline">线下面对面咨询</label>
+                                </div>
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="methodPhone" name="consultMethod" value="phone">
+                                    <label for="methodPhone">电话咨询</label>
+                                </div>
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="methodNoPreference" name="consultMethod" value="noPreference" checked>
+                                    <label for="methodNoPreference">无特别偏好</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="referral">您是如何知道我们的？</label>
+                            <select id="referral" name="referral">
+                                <option value="">请选择</option>
+                                <option value="search">搜索引擎</option>
+                                <option value="social">社交媒体</option>
+                                <option value="friend">朋友推荐</option>
+                                <option value="doctor">医生推荐</option>
+                                <option value="other">其他</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-submit">
+                            <button type="submit" class="btn">提交预约申请</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3057.123456789012!2d116.123456!3d39.987654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMznCsDU5JzE1LjYiTiAxMTbCsDA3JzI0LjQiRQ!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        document.getElementById('appointmentForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const email = document.getElementById('email').value;
+            
+            if (!name || !phone || !email) {
+                alert('请填写所有必填字段');
+                return;
+            }
+            
+            alert('感谢您的预约申请！我们将在24小时内与您联系确认咨询时间。');
+            this.reset();
+            
+        });
+        
+        const today = new Date().toISOString().split('T')[0];
+        document.getElementById('preferredDate').min = today;
+    </script>
+</body>
+</html>
+
